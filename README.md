@@ -33,14 +33,27 @@ or
 ```sh
 nano ${HOME}/sora2/docker-compose.yml
 ```
-5. Start node
+5. Create aliases
 ```sh
-cd ${HOME}/sora2
-docker-compose up -d
+echo "" >> ~/.bashrc
+echo "# sora aliases" >> ~/.bashrc
+echo "alias sorastart='cd ${HOME}/sora2; docker-compose up -d'" >> ~/.bashrc
+echo "alias sorastop='cd ${HOME}/sora2; docker-compose down'" >> ~/.bashrc
+echo "alias soralogs='docker logs -f sora-mainnet'" >> ~/.bashrc
+source  ~/.bashrc
+``` 
+
+6. Start node
+```sh
+sorastart
 ```
-6. Check logs
+ Check logs
 ```sh
-docker logs -f sora-mainnet
+soralogs
+```
+ Stop node
+```sh
+sorastop
 ```
 
 You can check your node sync status on:
