@@ -4,7 +4,7 @@ services:
   sora-node:
     image: sora2/substrate:1.0.1
     container_name: sora-mainnet
-    command: "--name lux8_test --chain main --validator   --base-path /chain    --unsafe-ws-external --unsafe-rpc-external --rpc-methods=Unsafe --rpc-cors all --prometheus-external  --discover-local --telemetry-url  'wss://telemetry.polkadot.io/submit/ 0'" 
+    command: "--name 'lux8_test' --chain main --validator   --base-path /chain    --unsafe-ws-external --unsafe-rpc-external --rpc-methods=Unsafe --rpc-cors all --prometheus-external  --discover-local --telemetry-url  'wss://telemetry.polkadot.io/submit/ 0'" 
     user: "10000:10000"
     dns:
       - 8.8.8.8
