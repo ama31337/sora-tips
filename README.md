@@ -41,3 +41,9 @@ docker-compose up -d
 ```sh
 docker logs -f sora-mainnet
 ```
+
+You can check your node sync status on:
+https://telemetry.polkadot.io/#/SORA
+
+And interact with the network via our RPC on:
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsora.lux8.net#/staking
