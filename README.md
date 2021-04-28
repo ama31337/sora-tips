@@ -27,11 +27,11 @@ cp ${HOME}/sora-tips/docker-compose.yml ${HOME}/sora2
 ```
 4. Edit your node name in docker-compose with your preffered text editor
 ```sh
-vim ${HOME}/sora-tips/docker-compose.yml
+vim ${HOME}/sora2/docker-compose.yml
 ```
 or
 ```sh
-nano ${HOME}/sora-tips/docker-compose.yml
+nano ${HOME}/sora2/docker-compose.yml
 ```
 5. Start node
 ```sh
