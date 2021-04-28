@@ -35,6 +35,7 @@ nano ${HOME}/sora2/docker-compose.yml
 ```
 5. Start node
 ```sh
+cd ${HOME}/sora2
 docker-compose up -d
 ```
 6. Check logs
