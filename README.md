@@ -70,7 +70,7 @@ docker exec $(docker ps | grep sora2/substrate |  awk '{print $1;}') curl -s htt
 ###
 If you find this helpful, stake with us: https://lux8.net/sora
 
-# Other comminity members work:
+### Other comminity members work:
 If you want your own RPC running on the node, check this guide:
 
 https://github.com/ciprianiacobescu/Composed-Xor-Validator
