@@ -14,7 +14,6 @@ and docker-compose
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-
 2. Clone this repository to your server
 ```sh
 cd $HOME; git clone https://github.com/ama31337/sora-tips.git
@@ -67,4 +66,5 @@ To rotate node keys, run
 docker exec $(docker ps | grep sora2/substrate |  awk '{print $1;}') curl -s http://localhost:9933 -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params”:[]}’
 ```
 
+###
 If you find this helpful, stake with us: https://lux8.net/sora
