@@ -65,6 +65,5 @@ To rotate node keys, run
 ```sh
 docker exec $(docker ps | grep sora2/substrate |  awk '{print $1;}') curl -s http://localhost:9933 -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params”:[]}’
 ```
-
 ###
 If you find this helpful, stake with us: https://lux8.net/sora
