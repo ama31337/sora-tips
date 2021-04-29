@@ -61,3 +61,8 @@ https://telemetry.polkadot.io/#/SORA
 
 And interact with the network via our RPC on:
 https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsora.lux8.net#/staking
+
+To rotate node keys, run
+```sh
+docker exec $(docker ps | grep sora2/substrate |  awk '{print $1;}') curl -s http://localhost:9933 -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params”:[]}’
+```
