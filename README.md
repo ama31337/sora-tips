@@ -2,7 +2,7 @@
 
 This guide is testet on Ubuntu 20.04 and probably will work flawless on 18 as well.
 
-It also implies that you are working under a user with sudo priveleges.
+It also implies that you are working under a user with sudo priveleges, to do so, run from root:
 
 ```sh
 export NEWUSER=sora
