@@ -1,5 +1,9 @@
 ### The easiest way to run you SORA mainnet node
 
+This guide is testet on Ubuntu 20.04 and probably will work flawless on 18 as well.
+It also implies that you are working under a user with sudo priveleges.
+If you're running from root, you know what you're doing for sure :)
+
 ### Installation
 1. Install docker 
 ```sh
