@@ -53,7 +53,7 @@ echo "" >> ~/.bashrc
 echo "# sora aliases" >> ~/.bashrc
 echo "alias sorastart='cd ${HOME}/sora2; docker-compose up -d'" >> ~/.bashrc
 echo "alias sorastop='cd ${HOME}/sora2; docker-compose down'" >> ~/.bashrc
-echo "alias soralogs='docker logs -f sora-mainnet'" >> ~/.bashrc
+echo "alias soralogs='docker logs -f --tail=1000 sora-mainnet'" >> ~/.bashrc
 source  ~/.bashrc
 ``` 
 
