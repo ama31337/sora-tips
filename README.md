@@ -80,7 +80,7 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsora.lux8.net#/staking
 
 To rotate node keys, run
 ```sh
-docker exec $(docker ps -aqf "name=sora-mainnet") curl -s http://localhost:9933 -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params”:[]}'
+docker exec $(docker ps -aqf "name=sora-mainnet") curl -s http://localhost:9933 -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}'
 ```
 ###
 If you find this helpful, stake with us: https://lux8.net/sora
