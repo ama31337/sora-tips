@@ -6,7 +6,7 @@ mkdir -p $HOME/logs
 crontab -l | 
 {
     echo "#crontab for $USER on $HOSTNAME"
-    echo "* * * * * cd $SCRIPT_DIR && ./check_peers.sh >> $HOME/logs/check_peers.log ";
+    echo "* * * * * cd $SCRIPT_DIR && ./check_peers_rpc.sh >> $HOME/logs/check_peers_rpc.log ";
     echo "*/6 * * * * cd $SCRIPT_DIR && ./check_sync_rpc.sh >> $HOME/logs/check_sync_rpc.log ";
 #    echo "0 */4 * * * cd $SCRIPT_DIR && ./check_sidecar.sh >> $HOME/logs/check_sidecar.log ";
 } | crontab -
