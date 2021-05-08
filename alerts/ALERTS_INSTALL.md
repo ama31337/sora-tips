@@ -4,7 +4,7 @@ If you install SORA node via our main guide, you can simply install this scripts
 
 1. Pull updates from github
 ```sh
-cp ${HOME}/sora-tips/; git pull
+cd ${HOME}/sora-tips/; git pull
 ```
 
 2. Create your telegram bot via @botfather, start it and put correct telegram_bot_token="xxx" and telegram_chat_id="xxx" in:
